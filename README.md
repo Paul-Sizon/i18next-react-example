@@ -49,7 +49,7 @@
      }
      ```
 
-4. **Обновите `index.js`**
+4. **Обновите `index.js` чтобы I18nextProvider обертывал App (не понимаю где это в PHP, может в Twig???)**
    ```javascript
    import React from 'react';
    import ReactDOM from 'react-dom/client';
@@ -63,6 +63,7 @@
    const root = ReactDOM.createRoot(document.getElementById('root'));
    root.render(
      <React.StrictMode>
+      // вот так
        <I18nextProvider i18n={i18n}>
          <App />
        </I18nextProvider>
