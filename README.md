@@ -1,6 +1,6 @@
 ### README
 
-![Example GIF](https://github.com/Paul-Sizon/i18next-react-example/blob/main/example.gif)
+<img src="https://github.com/Paul-Sizon/i18next-react-example/blob/main/example.gif" alt="Example GIF" width="600" height="400">
 
 #### Настройка локализации
 

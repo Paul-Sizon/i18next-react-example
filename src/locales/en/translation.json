@@ -1,4 +1,6 @@
 {
   "welcome": "Welcome to our application",
-  "description": "This is a sample description"
+  "description": "This is a sample description",
+  "Edit src/App.js and save to reload.": "Edit src/App.js and save to reload.",
+  "Learn React": "Learn React"
 }

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -15,19 +16,16 @@ function App() {
         {" "}
         <h1>{t("welcome")}</h1>
         <p>{t("description")}</p>
-        <button onClick={() => changeLanguage("en")}>English</button>
-        <button onClick={() => changeLanguage("es")}>Español</button>
+        <LanguageSelector />
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>{t("Edit src/App.js and save to reload.")}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {t("Learn React")}
         </a>
       </header>
     </div>
