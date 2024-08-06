@@ -1,5 +1,7 @@
 ### README
 
+![Example GIF](https://github.com/Paul-Sizon/i18next-react-example/blob/main/example.gif)
+
 #### Настройка локализации
 
 1. **Установите библиотеки i18n**
