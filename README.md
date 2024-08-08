@@ -1,16 +1,18 @@
 ### README
 
+#### Example on how to use i18n with React
+
 ![Example GIF](https://github.com/Paul-Sizon/i18next-react-example/blob/main/example.gif)
 
-#### Настройка локализации
+####  Install i18n Libraries
 
-1. **Установите библиотеки i18n**
+1. **Шnstall the necessary i18n libraries:**
    ```bash
    npm install i18next react-i18next i18next-browser-languagedetector
    ```
 
-2. **Настройте i18n**
-   - Создайте `src/i18n.js`
+2. **Configure i18n**
+   - create `src/i18n.js`
      ```javascript
      import i18n from 'i18next';
      import { initReactI18next } from 'react-i18next';
@@ -35,7 +37,7 @@
      export default i18n;
      ```
 
-3. **Создайте файлы переводов**
+3. **Create Translation Files**
    - `src/locales/en/translation.json`
      ```json
      {
@@ -51,7 +53,7 @@
      }
      ```
 
-4. **Обновите `index.js` чтобы I18nextProvider обертывал App (не понимаю где это в PHP, может в Twig???)**
+4. **Update `index.js` to wrap App inside I18nextProvider**
    ```javascript
    import React from 'react';
    import ReactDOM from 'react-dom/client';
@@ -65,7 +67,6 @@
    const root = ReactDOM.createRoot(document.getElementById('root'));
    root.render(
      <React.StrictMode>
-      // вот так
        <I18nextProvider i18n={i18n}>
          <App />
        </I18nextProvider>
@@ -75,7 +76,7 @@
    reportWebVitals();
    ```
 
-5. **Используйте переводы в компонентах**
+5. **Use translation (key from json) inside react components**
    ```javascript
    // src/App.js
    import React from 'react';
@@ -88,6 +89,7 @@
        <div className="App">
          <h1>{t('welcome')}</h1>
          <p>{t('description')}</p>
+         <LanguageSelector />
        </div>
      );
    }
