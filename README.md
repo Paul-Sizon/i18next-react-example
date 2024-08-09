@@ -1,12 +1,11 @@
-### README
+### Example on how to use i18n with React + language button
 
-#### Example on how to use i18n with React
 
 ![Example GIF](https://github.com/Paul-Sizon/i18next-react-example/blob/main/example.gif)
 
 ####  Install i18n Libraries
 
-1. **Шnstall the necessary i18n libraries:**
+1. **Install the necessary i18n libraries:**
    ```bash
    npm install i18next react-i18next i18next-browser-languagedetector
    ```
